@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* This css is for normalizing styles. You can skip this. */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+ul{
+    list-style: none;
+    margin:0px;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-size: 14px;
+    font-family: 'open sans', sans-serif;
+    font-kerning: normal;
+    text-rendering: optimizeSpeed;
+    background: #F5F5F5
+}
+
+section,section.wrapper {
+    margin-top: 0px
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table
+}
+
+[class*=col-] {
+    float: left;
+    padding-left: 7px;
+    padding-right: 7px;
+    position: relative;
+    min-height: 1px
+}
+
+
+
+@media(device-width: 1024px) {
+    .wrapper {
+        padding-left:3px;
+        padding-right: 3px;
+        width: 98%
+    }
+}
+
+.col-1 {
+    width: 8.33%
+}
+
+.col-2 {
+    width: 16.66%
+}
+
+.col-3 {
+    width: 25%
+}
+
+.col-4 {
+    width: 32.33%
+}
+
+.col-5 {
+    width: 41.66%
+}
+
+.col-6 {
+    width: 50%
+}
+
+.col-7 {
+    width: 58.33%
+}
+
+.col-8 {
+    width: 65.44%
+}
+
+.col-9 {
+    width: 75%
+}
+
+.col-10 {
+    width: 83.33%
+}
+
+.col-11 {
+    width: 91.66%
+}
+
+.col-12 {
+    width: 100%
+}
+
+.clearfix,.job-post-view {
+    clear: both
+}
+.page-heading{
+    font-size: 32px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 50px;
+}
+.page-heading::after{
+    content:"";
+    width:60px;
+    height:6px;
+    background-color: #22A5F9;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+.job-icon{
+    display: inline-block;
+    width:24px;
+    height:24px;
+    background: url(../images/job-icon-sprite.png) no-repeat;
+    background-position-x:0;
+    position: relative;
+    bottom:-5px;
+    margin-right:10px;
+}
+.icon-upload-resume{
+    background-position-y:-3px;
+}
+.icon-job-post{
+    background-position-y:-40px;
+}
+.icon-map{
+    background-position-y:-104px;
+    max-width: 14px;
+}
+.icon-brifcase{
+    background-position-y:-73px;
+    margin-right: 5px !important;
+}
+.icon-view-count{
+    background-position-y:-132px;
+}
+.div-view-all{
+    text-align: center;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.job-btn-primary{
+    padding:10px 16px;
+    border: 1px solid #D4D4D4;
+    min-width:210px;
+    background: #22A5F9;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+}
+.job-top-banner{
+    background: url(../images/hero-banner-bg.png) no-repeat;
+    background-size: cover;
+    min-height: 340px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.hero-banner{
+    position: relative;
+    width: 100%;
+    padding-top:40px;
+    padding-bottom:40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.job-menu-wrapper{
+    min-height:40px;
+    width:100%;
+    min-height: 40px;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x:auto;
+}
+.job-menu-list{
+    display: flex;
+    flex-flow: row wrap;
+    min-width:600px;
+    gap:10px;
+}
+.job-menu-list li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding:10px 12px;
+    display: block;
+}
+.job-menu-list li:hover a{
+    background: #22A5F9;
+}
+.job-serach-container{
+    background-color: rgb(238 249 255 / 90%);
+    padding:18px 20px;
+    border-radius:10px;
+    width: 100%;
+    min-height:86px;
+}
+.job-serach-form-wrap{
+    display: flex;
+    flex-flow: row wrap;
+    gap:15px;
+}
+.job-input:not(:last-child){
+    width: calc(50% - 92px);
+}
+.job-input-control{
+    width:100%;
+    min-height:50px;
+    padding:20px 16px;
+    border: 1px solid #D4D4D4;
+    color: #212121;
+    text-transform: uppercase;
+}
+.job-input-control::placeholder,
+.job-input-control::-moz-placeholder,
+.job-input-control::-webkit-input-placeholder{
+    color: #565656;
+}
+
+.job-submit-btn{
+    min-height:50px;
+    padding:20px 16px;
+    border: 1px solid #D4D4D4;
+    min-width:152px;
+    background: #22A5F9;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.job-submit-btn,.job-submit-btn:focus{
+    outline: none;
+}
+.job-extra-btns{
+    display: flex;
+    flex-flow: row wrap;
+    gap:10px;
+    align-items: center;
+}
+.btn-upload-resume{
+    background-color: #0CD455;
+    padding: 10px 20px;
+    font-size:20px;
+    font-weight:600;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.btn-job-post{
+    padding: 10px 20px;
+    font-size:20px;
+    font-weight:600;
+    color: #fff;
+    border-radius: 10px;
+    border:1px solid #fff;
+}
+.latest-job-wrap{
+    margin-top:40px;
+}
+.job-cards-wrap{
+    display:flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+.job-cards{
+    background: #fff;
+    border:1px solid #D4D4D4;
+    border-radius: 10px;
+    padding: 20px 15px;
+    width: calc(25% - 15px);
+}
+.comp-name{
+    font-size: 20px;
+    color: #212121;
+}
+.job-position{
+    font-size: 20px;
+    font-weight: 600;
+    color: #212121;
+    margin-top: 10px;
+}
+.job-disc{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.applied-job{
+    color: #4B4B4B;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.card-footer{
+    margin-top: 10px;
+}
+.card-foot-list{
+    display: flex;
+    flex-flow: row;
+    gap:10px;
+    justify-content: space-between;
+}
+.card-foot-list li{
+    color: #4B4B4B;
+    font-size: 14px;
+    min-width: 40px;
+}
+.card-foot-list li .job-icon{
+    margin-right:0px;
+    width:18px;
+}
+.popular-jobs-bg{
+    background:#EBF7FF;
+    padding-top:60px;
+    padding-bottom:20px;
+}
+.popular-jobs-wrap{
+    display:flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+.popular-jobs-card{
+    background: #fff;
+    border:1px solid #D4D4D4;
+    border-radius: 10px;
+    padding: 15px;
+    width: calc(25% - 15px);
+}
+.job-degination{
+    font-size: 20px;
+    font-weight: 600;
+    color: #212121;
+    margin-bottom: 10px;
+}
+.btn-explore{
+    color: #22A5F9;
+    font-size: 14px;
+}
+.jobs-by-skills-bg{
+    background:#fff;
+    padding:60px 0px;
+}
+.jobs-tag-list{
+    display:flex;
+    flex-flow: row wrap;
+    gap: 10px; 
+}
+.tag-list-item{
+    display: inline-block;
+    background: #fff;
+    border:1px solid #D4D4D4;
+    border-radius: 50px;
+    padding:10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+.tag-list-item:hover{
+    border-color: #212121;
+}
+.top-companies-wrap{
+    padding-top:60px;
+    padding-bottom:50px;
+}
+.top-companies-list{
+    display:flex;
+    flex-flow: row wrap;
+    gap: 20px; 
+}
+.top-companies-list{
+    display:flex;
+    flex-flow: row wrap;
+    gap: 20px; 
+}
+.companies-cards{
+    background: #fff;
+    border:1px solid #D4D4D4;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(25% - 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height:180px; */
+}
+
+@media only screen and (min-width:768px) {
+    .bdr-radus-left{
+        border-top-left-radius:10px;
+        border-bottom-left-radius:10px;
+    }
+    .bdr-radus-right{
+        border-top-right-radius:10px;
+        border-bottom-right-radius:10px;
+    }
+}
+@media only screen and (max-width:1023px) {
+    section.wrapper{
+        max-width: 90%;
+        margin: auto;
+    }
+    .page-heading{
+        font-size:20px;
+    }
+    .job-serach-form-wrap {
+        gap: 5px;
+        justify-content: center;
+    }
+    .job-cards,.popular-jobs-card{
+        width: calc(33% - 20px);
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .job-top-banner{
+        min-height: 60vh;
+        margin-bottom: 30px;
+        background-position: 36% top;
+    }
+    .job-serach-form-wrap {
+        gap: 10px;
+    }
+    .job-input:not(:last-child) {
+        width: 100%;
+    }
+    .btn-upload-resume, .btn-job-post{
+        font-size: 16px;
+    }
+    .job-cards, .popular-jobs-card, .companies-cards{
+        width: calc(100% - 10px);
+    }
+    .page-heading{
+        margin-bottom: 30px;
+    }
+    .companies-cards{
+        min-height:180px;
+    }
+}
